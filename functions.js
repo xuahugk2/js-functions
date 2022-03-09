@@ -88,19 +88,19 @@ const add = (x, y) => {
     switch (operation) {
         case 'add':
             z = x + y
-            console.log(`${x} + ${y} = ${x + y}`)
+            console.log(`${x} + ${y} = ${z}`)
             break
         case 'subtract':
             z = x - y
-            console.log(`${x} - ${y} = ${x - y}`)
+            console.log(`${x} - ${y} = ${z}`)
             break
         case 'multiply':
             z = x * y
-            console.log(`${x} * ${y} = ${x * y}`)
+            console.log(`${x} * ${y} = ${z}`)
             break
         case 'divide':
             z = x / y
-            console.log(`${x} / ${y} = ${x / y}`)
+            console.log(`${x} / ${y} = ${z}`)
             break
     }
 
@@ -236,10 +236,8 @@ const combine = (word1, word2) => {
  * @return {object} circle
  */
 const createCircle = (radius) => {
-    const circle = {
+    return circle = {
         circumference: 2 * Math.PI * radius,
         area: Math.PI * radius * radius
     }
-
-    return circle
 }
